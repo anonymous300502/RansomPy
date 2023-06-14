@@ -7,6 +7,7 @@ This is a ransomware program developed using Python. It encrypts files on the vi
 ## Disclaimer
 
 **Please note that this program is for educational purposes only** and should not be used for any malicious activities. The primary goal of this README is to explain the functionality of the program and provide information about the imported modules and functions used in the code.
+The Developers will not be liable to any damage caused by the unethical use of this code. 
 
 ## Modules Used
 
@@ -51,12 +52,20 @@ The program defines the following functions:
 
 1. **Disclaimer**: Again, please note that this program is for educational purposes only and should not be used for any malicious activities.
 
-2. **Execution**: Run the program using Python. Make sure you have the required modules installed.
+2. **Execution**: Use Pyinstaller to make a .exe using the ransomware.py as the base file, create a windowed terminal if needed(recommended).
 
-3. **Behavior**: The program will encrypt files within specified folders, change the desktop background, and display a ransom note with instructions for file decryption.
+3. **Real-Life Scenario**: - Attacker creates public/private keys from attackerkeys.py and adds his public key in the main code and send the malware to the target.
+                           - Once the target system gets encrypted a file called 'email.txt' containing the encrypted key will appear on it's desktop.
+                           - The target will pay the ransom and then only send the file to the attacker. 
+                           - The attacker will decrypt the key using decrypt_fernetkey.py and send a file 'putmeondesktop.txt' containing decrypted key to the target
+                           - The target will have to place the file on it's desktop and then wait for the decryption process to complete.
+                           - The code will stop once decryption is completed, or if the target fails to pay the ransom the code will delete all the files once the countdown ends and exits.
 
-4. **Decryption**: To decrypt the files, follow the instructions in the ransom note. The program will wait for a decrypted key file and use it to decrypt the folders.
+4. **Behavior**: When someone opens this .exe, The program will encrypt files within their drives, leaving important folders for windows functioning such as system32, Then it will display a ransom note.
+                 A countdown timer opens up displaying a 24 hour countdown and the program starts waiting for a file 'putmeondesktop'.txt on the desktop and once recieved it will decrypt all the folders. If, however, the target fails to get the decrypted key all the files will be permanently deleted once the timer runs out.
 
-## Important Note
+5. **Decryption**: To decrypt the files, follow the instructions in the ransom note. The program will wait for a decrypted key file and use it to decrypt the folders.
 
-Please refrain from using this code for any malicious purposes. It is essential to respect the privacy and security of others.
+## Contributors
+1. [Abhishek Sharma] (https://github.com/anonymous300502)
+2. [Manaswi Sharma] (https://github.com/manaswii)
