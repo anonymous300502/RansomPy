@@ -9,6 +9,16 @@ This is a ransomware program developed using Python. It encrypts files on the vi
 **Please note that this program is for educational purposes only** and should not be used for any malicious activities. The primary goal of this README is to explain the functionality of the program and provide information about the imported modules and functions used in the code.
 The Developers will not be liable to any damage caused by the unethical use of this code. 
 
+## Features
+
+- Encrypts files using a symmetric key encryption algorithm
+- Encrypts files with specific file extensions only
+- Generates a unique encryption key for each victim
+- Encrypts files in specified folders and drives
+- Changes the desktop background to display a ransom note
+- Provides instructions for ransom payment and file decryption
+- Implements a countdown timer to delete encrypted files and the encryption key
+
 ## Modules Used
 
 The program utilizes the following Python modules:
